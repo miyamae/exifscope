@@ -1,0 +1,8 @@
+<%= form_tag root_path, method: :get, role: 'form', class: 'form' do %>
+  <div class="form-group url">
+    <%= text_field_tag :url, params[:url],
+        class: 'form-control', placeholder: 'http://', autofocus: true,
+        'data-content' => '写真のURL(.jpg)を直接指定するか、写真を含むページのURLを指定してください。' %>
+  </div>
+  <button type="submit" class="submit-url btn btn-default">送信</button>
+<%- end -%>

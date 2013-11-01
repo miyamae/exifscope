@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title><%= ApplicationController::PRODUCT_NAME %></title>
+    <meta name="description" content="写真のExifデータを表示するサービスです。ブックマークレットを使えば閲覧中の写真のExif情報を簡単に確認できます。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="(C) BitArts, Inc."/>
+    <meta name="author" content="Tatsuya Miyamae @ BitArts"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!--[if lt IE 9]>
+    <%= stylesheet_link_tag 'jquery.ui.1.10.3.ie' %>
+    <%= javascript_include_tag 'html5shiv' %>
+    <%= javascript_include_tag 'respond.min' %>
+    <![endif]-->
+    <%= csrf_meta_tags %>
+    <%- if request.domain == 'exifscope.bitarts.jp' -%>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-1921096-7', 'bitarts.jp');
+        ga('send', 'pageview');
+      </script>
+    <%- end -%>
+    <%= yield :head -%>
+  </head>
+  <body>
+    <div id="wrap">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="<%= root_path %>"><%= ApplicationController::PRODUCT_NAME %></a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <%= yield %>
+      </div>
+      <div id="push"></div>
+    </div>
+    <div id="footer">
+      <div class="footer">
+        <div class="container">
+          <p class="muted credit">Powered by Tatsuya Miyamae @ <a href="http://bitarts.jp/">BitArts, Inc.</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

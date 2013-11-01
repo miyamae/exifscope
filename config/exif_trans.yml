@@ -1,0 +1,613 @@
+fields:
+  width: 画像の幅
+  height: 画像の高さ
+  image_width: 画像の幅
+  image_length: 画像の高さ
+  bits_per_sample: 画像のビットの深さ
+  bits: 画像のビットの深さ
+  compression: 圧縮の種類
+  photometric_interpretation: 画像構成
+  image_description: 画像タイトル
+  make: カメラのメーカー名
+  model: カメラのモデル名
+  strip_offsets: 画像データのロケーション
+  orientation: 画像方向
+  samples_per_pixel: コンポーネント数
+  rows_per_strip: ストリップ中のライン数
+  strip_byte_counts: ストリップのデータ量
+  x_resolution: 画像の幅の解像度
+  y_resolution: 画像の高さの解像度
+  planar_configuration: 画像データの並び
+  resolution_unit: 幅と高さの解像度の単位
+  transfer_function: 再生階調カーブ特性
+  creator_tool: 使用ソフトウェア名
+  modify_date: ファイル変更日時
+  artist: 作者名
+  white_point: 参照白色点の色度座標値
+  primary_chromaticities: 原色の色度座標値
+  jpeg_interchange_format: JPEGのSOIへのオフセット
+  jpeg_interchange_format_length: JPEGデータのバイト数
+  ycb_cr_coefficients: 色変換マトリクス係数
+  ycb_cr_sub_sampling: YCCの画素構成(Cの間引き率)
+  ycb_cr_positioning: YCCの画素構成(YとCの位置)
+  reference_black_white: 参照黒色点値と参照白色点値
+  copyright: 撮影著作権者/編集著作権者
+  exposure_time: 露出時間
+  f_number: F値
+  exif_ifd_pointer: Exifタグ
+  exposure_program: 露出プログラム
+  spectral_sensitivity: スペクトル感度
+  gps_info_ifd_pointer: GPSタグ
+  iso_speed_ratings: ISOスピードレート
+  oecf: 光電交換関数
+  exif_version: Exifバージョン
+  date_time: 日時
+  date_time_original: 撮影日時
+  date_time_digitized: デジタル化日時
+  metadata_date: デジタルデータの生成日時
+  components_configuration: 各コンポーネントの意味
+  compressed_bits_per_pixel: 画像圧縮モード
+  shutter_speed_value: シャッタースピード
+  aperture_value: 絞り値
+  brightness_value: 輝度値
+  exposure_bias_value: 露出補正値
+  max_aperture_value: レンズ最小F値
+  subject_distance: 被写体距離
+  metering_mode: 測光方式
+  light_source: 光源
+  flash: フラッシュ
+  focal_length: レンズ焦点距離
+  subject_area: Subject area
+  maker_note: メーカーノート
+  user_comment: ユーザーコメント
+  comment: コメント
+  sub_sec_time: 日時のサブセック
+  sub_sec_time_original: 撮影日時のサブセック
+  sub_sec_time_degitized: デジタル化日時のサブセック
+  subsec_time: 日時のサブセック
+  subsec_time_orginal: 撮影日時のサブセック
+  subsec_time_original: 撮影日時のサブセック
+  subsec_time_degitized: デジタル化日時のサブセック
+  subsec_time_digitized: デジタル化日時のサブセック
+  flashpix_version: 対応フラッシュピックスバージョン
+  color_space: 色空間情報
+  pixel_x_dimension: 実効画像幅
+  pixel_y_dimension: 実効画像高さ
+  related_sound_file: 関連音声ファイル
+  interoperability_ifd_pointer: 互換性IFDへのポインタ
+  flash_energy: フラッシュ強度
+  spatial_frequency_response: 空間周波数応答
+  focal_plane_x_resolution: 焦点面の幅の解像度
+  focal_plane_y_resolution: 焦点面の高さの解像度
+  focal_plane_resolution_unit: 焦点面解像度単位
+  subject_location: 被写体位置
+  exposure_index: 露出インデックス
+  sensing_method: センサー方式
+  file_source: ファイルソース
+  scene_type: シーンタイプ
+  cfa_pattern: CFA パターン
+  custom_rendered: カスタム画像処理
+  exposure_mode: 露出モード
+  white_balance: ホワイトバランス
+  digital_zoom_ratio: デジタルズーム比率
+  focal_length_in_35mm_film: 35mm換算焦点距離
+  scene_capture_type: シーン撮影タイプ
+  gain_control: ゲインコントロール
+  contrast: コントラスト
+  saturation: 彩度
+  sharpness: シャープネス
+  device_setting_description: デバイス設定
+  subject_distance_range: 被写体距離範囲
+  dng_version: DNG バージョン
+  dng_backward_version: DNG backward version
+  dng_unique_camera_model: カメラ機種名
+  dng_localized_camera_model: カメラ機種名
+  dngcfa_plane_color: CFA plane color
+  dngcfa_layout: CFAレイアウト
+  dng_linearization_table: Linearization table
+  dng_black_level_repeat_dim: Black level repeat dim
+  dng_black_level: Black level
+  dng_black_level_delta_h: Black level delta H
+  dng_black_level_delta_v: Black level delta V
+  dng_white_level: White level
+  dng_defaultscale: Default scale
+  dng_default_crop_origin: Default crop origin
+  dng_default_crop_size: Default crop size
+  dng_color_matrix1: Color matrix1
+  dng_color_matrix2: Color matrix2
+  dng_camera_calibration1: Camera calibration1
+  dng_camera_calibration2: Camera calibration2
+  dng_reduction_matrix1: Reduction matrix1
+  dng_reduction_matrix2: Reduction matrix2
+  dng_analog_balance: Analog balance
+  dng_as_shot_neutral: As shot neutral
+  dng_as_shot_white_xy: As shot white XY
+  dng_baseline_exposure: Baseline exposure
+  dng_baseline_noise: Baseline noise
+  dng_baseline_sharpness: Baseline sharpness
+  dng_bayer_green_split: Bayer green split
+  dng_linear_response_limit: Linear response limit
+  dng_camera_serial_number: シリアルナンバー
+  dng_lens_info: レンズ情報
+  dng_chroma_blur_radius: Chroma blur radius
+  dng_anti_alias_strength: Anti-alias strength
+  dng_shadow_scale: Shadow scale
+  dng_private_data: プライベートデータ
+  dng_maker_note_safety: MakerNote safety
+  dng_calibration_illuminant1: Calibration illuminant1
+  dng_calibration_illuminant2: Calibration illuminant2
+  dng_best_quality_scale: Best quality scale
+  dng_raw_data_unique_id: Raw data unique ID
+  dng_original_raw_file_name: オリジナル RAW ファイル名
+  dng_original_raw_file_data: オリジナル RAW ファイルデータ
+  dng_active_area: Active area
+  dng_masked_area: Masked area
+  dng_as_shot_icc_profile: As shot ICC profile
+  dng_as_shot_pre_profile_matrix: As shot pre-profile matrix
+  dng_current_icc_profile: Current ICC profile
+  dng_current_pre_profile_matrix: Current pre-profile matrix
+  gps_version_id: GPS タグのバージョン
+  gps_latitude_ref: 北緯(N) or 南緯(S)
+  gps_latitude: 緯度 (数値)
+  gps_longitude_ref: 東経(E) or 西経(W)
+  gps_longitude: 経度 (数値)
+  gps_altitude_ref: 高度の単位
+  gps_altitude: 高度 (数値)
+  gps_time_stamp: GPS 時間 (原子時計の時間)
+  gps_satellites: 測位に使った衛星信号
+  gps_status: GPS 受信機の状態
+  gps_messure_mode: GPS 測位方法
+  gpsdop: 測位の信頼性
+  gps_speed_ref: 速度の単位
+  gps_speed: 速度 (数値)
+  gps_track_ref: 進行方向の単位
+  gps_track: 進行方向 (数値)
+  gps_img_direction_ref: 撮影した画像の方向の単位
+  gps_img_direction: 撮影した画像の方向 (数値)
+  gps_map_datum: 測位用いた地図データ
+  gps_dest_latitude_ref: 目的地の北緯(N) or 南緯(S)
+  gps_dest_latitude: 目的地の緯度 (数値)
+  gps_dest_longitude_ref: 目的地の東経(E) or 西経(W)
+  gps_dest_longitude: 目的地の経度 (数値)
+  gps_dest_bearing_ref: 目的地の方角の単位
+  gps_dest_bearing: 目的地の方角 (数値)
+  gps_dest_distance_ref: 目的地までの距離の単位
+  gps_dest_distance: 目的地までの距離 (数値)
+  gps_processing_method: Name of GPS processing method
+  gps_area_information: Name of GPS area
+  gps_date_stamp: GPS date
+  gps_differential: GPS differential correction
+  interoperability_index: 互換性識別子
+  crs_raw_file_name: Raw ファイル名
+  crs_version: バージョン
+  crs_white_balance: ホワイトバランス
+  crs_temperature: 色温度
+  crs_tint: 色合い
+  crs_shadow_tint: ShadowTint
+  crs_exposure: 露光量
+  crs_shadows: シャドウ
+  crs_brightness: 明るさ
+  crs_contrast: コントラスト
+  crs_saturation: 彩度
+  crs_red_saturation: 彩度(赤)
+  crs_green_saturation: 彩度(緑)
+  crs_blue_saturation: 彩度(青)
+  crs_sharpness: シャープ
+  crs_luminance_smoothing: LuminanceSmoothing
+  crs_red_hue: RedHue
+  crs_green_hue: GreenHue
+  crs_blue_hue: BlueHue
+  crs_color_noise_reduction: ColorNoiseReduction
+  crs_chromatic_aberration_r: ChromaticAberrationR
+  crs_chromatic_aberration_b: ChromaticAberrationB
+  crs_vignette_amount: VignetteAmount
+  crs_lens: レンズ
+  crs_serial_number: シリアルナンバー
+  crs_auto_brightness: 明るさ自動設定
+  crs_auto_shadows: シャドウ自動設定
+  crs_auto_contrast: コントラスト自動設定
+  crs_auto_exposure: 露光量自動設定
+  ol_special_mode: 撮影モード
+  ol_jpeg_quality: 撮影品質
+  ol_macro: マクロ
+  ol_digital_zoom: デジタルズーム
+  ol_software_release: ファームウェア
+  o_lpict_info: 画像情報
+  ol_camera_id: カメラ ID
+  ol_data_dump: unknown
+  ol_flash_mode: フラッシュモード
+  ol_exposure_bias: 露出補正値
+  ol_focus_mode: フォーカスモード
+  ol_focus_distance: 焦点距離
+  ol_zoom: ズーム
+  ol_macro_focus: マクロ
+  ol_sharpness: シャープネス
+  ol_colour_matrix: カラーマトリックス
+  ol_black_level: 黒レベル
+  ol_white_balance: ホワイトバランス
+  ol_red_bias: バイアス(赤)
+  ol_blue_bias: バイアス(青)
+  ol_serial_number: シリアルナンバー
+  ol_flash_bias: フラッシュバイアス
+  ol_contrast: コントラスト
+  ol_sharpness_factor: Sharpness Factor
+  ol_colour_control: カラーコントロール
+  ol_valid_bits: 有効ビット
+  ol_coring_filter: Coring Filter
+  ol_image_width: 画像の幅
+  ol_image_height: 画像の高さ
+  ol_compression_ratio: 圧縮比
+  px_exposure_time: 露出時間
+  pxf_number: F値
+  pxiso_speed: ISO 値
+  px_exposure_bias: 露出補正値
+  px_white_balance: ホワイトバランス
+  px_lens_id: レンズ情報
+  px_image_tone: 画像仕上げ
+  ex_thumb_info: サムネイルの大きさ
+  ex_thumb_size: サムネイルのサイズ
+  ex_thumb_offset: サムネイルへのオフセット
+  ex_quality_mode: 撮影品質
+  ex_image_size: 画像サイズ
+  exiso_sensitivity: ISO 感度
+  ex_white_balance: ホワイトバランス
+  ex_focal_length: 焦点距離
+  ex_saturation: 彩度
+  ex_contrast: コントラスト
+  ex_sharpness: シャープネス
+  expim: unknown
+  ex_thumbnail: unknown
+  exwb_bias: ホワイトバランスバイアス
+  ex_flash: unknown
+  ex_object_distance: 対象物の距離
+  ex_flash_distance: フラッシュの距離
+  ex_record_mode: unknown
+  ex_self_timer: unknown
+  ex_quality: 品質
+  ex_focus_mode: フォーカスモード
+  ex_time_zone: タイムゾーン
+  ex_bestshot_mode: unknown
+  exccd_sensitivity: CCD感度
+  ex_color_mode: カラーモード
+  ex_color_enhance: 色強調
+  ex_filter: フィルター
+  pxo_capture_mode: 撮影モード
+  pxo_quality_level: 撮影品質
+  pxo_focus_mode: フォーカスモード
+  pxo_flash_mode: フラッシュ
+  pxo_white_balance: ホワイトバランス
+  pxo_digital_zoom: デジタルズーム
+  pxo_sharpness: シャープネス
+  pxo_contrast: コントラスト
+  pxo_saturation: 彩度
+  pxoiso_speed: ISO 感度
+  pxo_color_mode: カラー
+  pxo_time_zone: タイムゾーン
+  pxo_daylight_savings: Daylight savings
+  nkiso_setting: ISO 感度
+  nk_color_mode: カラーモード
+  nk_quality: 撮影品質
+  nk_whitebalance: ホワイトバランス
+  nk_sharpness: シャープネス
+  nk_focus_mode: フォーカスモード
+  nk_flash_setting: シンクロモード
+  nk_flash_mode: フラッシュモード
+  nk_white_balance_offset: ホワイトバランス補正量
+  nkis_oselection: ISO 感度の選択
+  nk_thumbnail_ifd_offset: unknown
+  nk_image_adjustment: 画像モード
+  nk_contrast_setting: 階調補正
+  nk_adapter: アダプター
+  nk_lens_setting: unknown
+  nk_lens_info: レンズ情報
+  nk_manual_focus_distance: マニュアルフォーカス距離
+  nk_digital_zoom: デジタルズーム比率
+  nkaf_focus_point: フォーカスエリア
+  nk_shutter_mode: 動作モード
+  nk_color_space: 色空間情報
+  nk_color_offset: 色相補正値
+  nk_noise_reduction: ノイズリダクション
+  nk_lend_id: レンズ ID
+  nk_shot_count: 撮影回数
+  nk_finish_setting: 仕上がり設定
+  nk_digital_img_prog: デジタルイメージプログラム
+  nke_quality: 撮影モード
+  nke_color_mode: カラーモード
+  nke_image_adjustment: 撮影設定
+  nkeccd_sensitivity: CCD 感度
+  nke_white_balance: ホワイトバランス
+  nke_focus: unknown
+  nke_digital_zoom: デジタルズーム比率
+  nke_converter: コンバータ
+  mlt_maker_note_version: バージョン
+  mlt_camera_settings_old: unknown
+  mlt_exposure_mode: 露出モード
+  mlt_flash_mode: フラッシュ
+  mlt_white_balance: ホワイトバランス
+  mlt_image_size: 画像サイズ
+  mlt_image_quality: 画像品質
+  mlt_drive_mode: ドライブモード
+  mlt_metering_mode: 測光方式
+  mlt_film_speed: ISO スピードレード
+  mlt_shutter_speed: シャッター速度
+  mlt_aperture: Aperture
+  mlt_macro_mode: マクロモード
+  mlt_digital_zoom: デジタルズーム
+  mlt_exposure_compensation: 露出補正
+  mlt_bracket_step: Bracket step
+  ml_tunknown16: unknown
+  mlt_interval_length: 時間間隔 (分)
+  mlt_interval_number: 間隔数
+  mlt_focal_length: 焦点距離 (35mm 換算)
+  mlt_focus_distance: Focus distance
+  mlt_flash_fired: フラッシュ
+  mlt_date: 日
+  mlt_time: 時
+  mlt_max_aperture: Max Aperture
+  mlt_file_number_memory: File number memory
+  mlt_last_file_number: Last file number
+  mlt_white_balance_red: ホワイトバランス(赤)
+  mlt_white_balance_green: ホワイトバランス(緑)
+  mlt_white_balance_blue: ホワイトバランス(青)
+  mlt_saturation: 彩度
+  mlt_contrast: コントラスト
+  mlt_sharpness: シャープネス
+  mlt_subject_program: 露出プログラム
+  mlt_flash_compensation: フラッシュ補正
+  mltiso_setting: ISO 値
+  mlt_camera_model: モデル
+  mlt_interval_mode: Interval mode
+  mlt_folder_name: Folder name
+  mlt_color_mode: カラーモード
+  mlt_color_filter: カラーフィルター
+  mltbw_filter: 白黒フィルター
+  mlt_internal_flash: 内蔵フラッシュ
+  mlt_brightness_value: 輝度値
+  mlt_spot_focus_point_x: 焦点位置(X)
+  mlt_spot_focus_point_y: 焦点位置(Y)
+  mlt_wide_focus_zone: Wide focus zone
+  mlt_focus_mode: フォーカスモード
+  mlt_focus_area: フォーカス範囲
+  mltdec_position: DEC position
+  mlt_comppress_image_size: 画像サイズ
+  mlt_thumbnail: unknown
+  mlt_thumbnail_offset: unknown
+  mlt_thumbnail_length: サムネイルのサイズ
+  mlt_lens_id: レンズ情報
+  mltpim_information: Print IM 情報
+  mlt_camera_settings: unknown
+  sg_serial_id: シリアルナンバー
+  sg_drive_mode: ドライブモード
+  sg_image_size: 記録画素数
+  sgaf_mode: AFモード
+  sg_focus_mode: フォーカスモード
+  sg_white_balance: ホワイトバランス
+  sg_exposure_mode: 露出モード
+  sg_metering_mode: 測光モード
+  sg_focal_length: 焦点距離
+  sg_color_space: 色空間
+  sg_exposure: 露出補正
+  sg_contrast: コントラスト
+  sg_shadow: シャドウ
+  sg_highlight: ハイライト
+  sg_saturation: 彩度補正
+  sg_sharpness: シャープネス補正
+  sgx3_fill_light: X3 Fill Light
+  sg_color_coordination: カラー調整
+  sg_custom_setting_mode: 調整設定
+  sg_jpeg_quality: JPEG 品質
+  sg_firmware: ファームウェア
+  sg_software: ソフトウェア
+  sg_auto_blacket: オートブラケット
+  software: ソフトウェア
+  cn_macro_mode: 撮影モード
+  cn_self_timer: セルフタイマー
+  cn_flash: フラッシュ
+  cn_drive_mode: ドライブモード
+  cn_focus_mode: フォーカスモード
+  cn_image_size: 画像サイズ
+  cn_image_select: イメージセレクト
+  cn_digital_zoom: デジタルズーム
+  cn_contrast: コントラスト
+  cn_saturation: 彩度
+  cn_sharpness: シャープネス
+  cniso_sensitive: ISO 感度
+  cn_metering_mode: 測光方式
+  cn_focus_type: フォーカスタイプ
+  cnaf_point: unknown
+  cn_exposure_porgram: 露出プログラム
+  cn_lens_id: レンズ情報
+  cn_lens_maximum: 最大焦点距離
+  cn_lens_minimum: 最小焦点距離
+  cn_lens_unit: 焦点距離単位(mm)
+  cn_flash_detailed: unknown
+  cn_focus_setting: フォーカス設定
+  cn_image_stabilization: 手ぶれ補正
+  cn_image_effect: 色効果
+  cn_hue_bias: 色合い補正値
+  cn_whitebalance: ホワイトバランス
+  cn_image_number: unknown
+  cnaf_point_used: unknown
+  cn_flash_bias: フラッシュ補正強度
+  cn_aperture: 絞り
+  cn_exposure: 露出時間
+  cnnd_filter: ND フィルター
+  cn_image_type: イメージの種類
+  cn_firmware: ファームウェア
+  cn_user: 所有者名
+  cn_serial: シリアルナンバー
+  cn_noise_reduction: ノイズリダクション
+  cn_buttun_function: シャッター/AEロックボタン
+  cn_mirror_lock_up: ミラーロックアップ
+  cn_shutter_step: シャッター/絞りの露出設定
+  cnaf_supliment: AF 補助光
+  cn_apex_priority: 絞り優先モード時のシャッター速度
+  cnae_function: AEブラケット順序とキャンセル機能
+  cn_shutter_synchro: シャッター幕シンクロ
+  cnaf_stop_button: レンズ AF ストップボタン
+  cn_flash_mem_limit: 自動フラッシュ充電量制限
+  cn_menu_position: メニューボタン復帰位置
+  cnset_function: SET ボタン機能
+  cn_sensor_cleaning: センサークリーニング
+  cn_color_temp: 色温度
+  cn_color_space: 色空間
+  fj_version: unknown
+  fj_quality: 画像品質
+  fj_sharpness: シャープネス
+  fj_white_balance: ホワイトバランス
+  fj_color: 色の濃さ
+  fj_flash_mode: フラッシュ
+  fj_flash_strength: フラッシュ補正
+  fj_macro: マクロ
+  fj_focus_mode: フォーカスモード
+  fj_slow_sync: スローシンクロ
+  fj_picture_mode: 撮影モード
+  fj_cont_blacket: 連写/自動ブラケット
+  fj_blur_warning: 手ぶれ警告
+  fj_focus_warning: オートフォーカスの状態
+  fjae_warning: 自動露出の状態
+  kc_mode: 撮影モード
+
+values:
+  exposure_program:
+    1: マニュアル露出
+    2: プログラムAE
+    3: 絞り優先AE
+    4: シャッター速度優先AE
+    5: クリエイティブプログラム
+    6: アクションプログラム
+    7: ポートレートモード
+    8: ランドスケープモード
+  resolution_unit:
+    1: なし
+    2: inch
+    3: centimeter
+  focal_plane_resolution_unit:
+    1: なし
+    2: inch
+    3: centimeter
+  ycb_cr_positioning:
+    1: Centered
+    2: Co-sited
+  color_space:
+    1: sRGB
+    2: Adobe RGB
+    65535: なし
+  custom_rendered:
+    0: 標準
+    1: カスタム
+  white_balance:
+    0: オート
+    1: マニュアル
+  scene_capture_type:
+    0: スタンダード
+    1: 風景
+    2: ポートレート
+    3: 夜景
+  sharpness:
+    0: 標準
+    1: ソフト
+    2: ハード
+  contrast:
+    0: 標準
+    1: ソフト
+    2: ハード
+  saturation:
+    0: 標準
+    1: 弱め
+    2: 強め
+  exposure_mode:
+    0: オート
+    1: マニュアル
+    2: オートブラケット
+  subject_distance_range:
+    0: 不明
+    1: Macro
+    2: Close view
+    3: Distant view
+  gain_control:
+    0: なし
+    1: ローゲインアップ
+    2: ハイゲインアップ
+    3: ローゲインダウン
+    4: ハイゲインダウン
+  orientation:
+    1: ノーマル
+    2: 上下反転
+    3: 180度回転
+    4: 180度回転＆上下反転
+    5: 90度回転＆上下反転
+    6: 90度回転
+    7: 270度回転＆上下反転
+    8: 270度回転
+  metering_mode:
+    0: 不明
+    1: 平均測光
+    2: 中央重点測光
+    3: スポット測光
+    4: マルチスポット測光
+    5: マルチパターン測光
+    6: 部分測光
+  sensing_method:
+    1: 未定義
+    2: One-chip color area sensor
+    3: Two-chip color area sensor
+    4: Three-chip color area sensor
+    5: Color sequential area sensor
+    6: Trilinear sensor
+    7: Color sequential linear sensor
+  light_source:
+    0: 不明
+    1: 昼光
+    2: 蛍光灯
+    3: 白熱灯
+    4: フラッシュ
+    9: 晴天
+    10: 曇天
+    11: 日陰
+    12: 昼光色蛍光灯
+    13: 昼白色蛍光灯
+    14: 冷白色蛍光灯
+    15: 白色蛍光灯
+    17: 標準光A
+    18: 標準光B
+    19: 標準光C
+    20: D55
+    21: D65
+    22: D75
+    23: D50
+    24: ISOスタジオ白熱灯
+    255: その他
+  flash:
+    0x00: 発光せず
+    0x01: 発光
+    0x05: 発光 (リターン未検出)
+    0x07: 発光 (リターン検出)'
+    0x08: 発光せず (強制)
+    0x09: 発光 (強制)
+    0x0D: 発光 (強制/リターン未検出)
+    0x0F: 発光 (強制/リターン検出)
+    0x10: 発光禁止
+    0x18: 発光せず (オート)
+    0x19: 発光 (オート)
+    0x1D: 発光 (オート/リターン未検出)
+    0x1F: 発光 (オート/リターン検出)
+    0x20: フラッシュ機能なし
+    0x41: 発光 (赤目軽減)
+    0x45: 発光 (赤目軽減/リターン未検出)
+    0x47: 発光 (赤目軽減/リターン検出)
+    0x49: 発光 (強制/赤目軽減)
+    0x4D: 発光 (強制/赤目軽減/リターン未検出)
+    0x4F: 発光 (強制/赤目軽減/リターン検出)
+    0x59: 発光 (オート/赤目軽減)
+    0x5D: 発光 (オート/リターン未検出/赤目軽減)
+    0x5F: 発光 (オート/リターン検出/赤目軽減)
+
+major_fields:
+  - date_time_original
+  - make
+  - model
+  - exposure_time
+  - f_number
+  - iso_speed_ratings
+  - exposure_bias_value

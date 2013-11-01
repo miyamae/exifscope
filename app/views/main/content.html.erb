@@ -1,0 +1,57 @@
+<%- if @photos -%>
+  <%- if @photos.size == 0 -%>
+    <p class="text-danger">写真がありません。</p>
+    <div class="alert alert-warning">
+      ヒント： ページ（.html）から写真が見つからない場合は、写真のURL（.jpg）を直接指定してください。
+    </div>
+  <%- elsif @photos.size > 1 -%>
+    <div id="container" class="clearfix">
+      <%- @photos.each do |photo| -%>
+        <div class="item" style="">
+          <a href="<%= url_for action: :index, url: photo.url %>">
+            <%= image_tag url_for(action: :image, url: photo.url, size: 200),
+              alt: photo.url, title: photo.url%></a>
+        </div>
+      <%- end -%>
+    </div>
+  <%- else -%>
+    <%- photo = @photos.first %>
+    <p><a href="<%= photo.url %>" target="_blank" title="<%= photo.url %>">
+      <%= image_tag url_for(action: :image, url: photo.url),
+        class: 'img-responsive', alt: photo.url, title: photo.url %></a></p>
+    <%- if photo.exif_value(:date_time_original) -%>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <%= photo.exif_value :date_time_original %>
+        </div>
+        <div class="panel-body">
+          <div>
+            <%= photo.exif_value :model %>
+          </div>
+          <div>
+            <span class="label label-default"><%= photo.exif_value :exposure_time %></span>
+            <span class="label label-default"><%= photo.exif_value :f_number %></span>
+            <span class="label label-default"><%= photo.exif_value :iso_speed_ratings %></span>
+            <%- if photo.exif.exposure_bias_value != 0 -%>
+              <span class="label label-default"><%= photo.exif_value :exposure_bias_value %></span>
+            <%- end -%>
+          </div>
+        </div>
+      </div>
+    <%- else -%>
+      <div class="alert alert-danger">
+        この写真には撮影データが含まれていません。
+      </div>
+    <%- end -%>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <%- photo.pretty_exif.each do |k, v| -%>
+          <tr>
+            <th class="col-xs-4"><%= v[0] %></th>
+            <td><%= v[1] %></td>
+          </tr>
+        <%- end -%>
+      </table>
+    </div>
+  <%- end -%>
+<%- end -%>

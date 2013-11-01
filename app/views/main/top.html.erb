@@ -1,0 +1,20 @@
+<%- content_for :head do -%>
+  <%= stylesheet_link_tag 'top' %>
+<%- end -%>
+<%= image_tag 'top_bg.jpg', class: 'top-bg' %>
+<div class="top-hero">
+  <%= render 'social', url: root_url %>
+  <p>写真に含まれる撮影情報などのExifデータを表示します。</p>
+  <%= render 'form' %>
+</div>
+<div class="top-bg2">
+</div>
+<div class="top-content">
+  <p>ブックマークレットを使えば、閲覧中の写真のExif情報を簡単に確認できます。</p>
+  <p><a href="javascript:window.open('<%= root_url %>?url='+encodeURIComponent(location.href));">
+  <span class="label label-default">Bookmarklet</span><br>
+  <code style="font-size:12px">javascript:window.open('<%= root_url %>?url='+encodeURIComponent(location.href));</code></a></p>
+</div>
+<p class="text-right" style="margin-top:50px;">
+  <a href="https://github.com/miyamae/exifscope">Fork me on GitHub</a>
+</p>
