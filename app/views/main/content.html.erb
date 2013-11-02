@@ -29,8 +29,11 @@
             <%= photo.exif_value :model %>
           </div>
           <div>
-            <span class="label label-default"><%= photo.exif_value :exposure_time %></span>
-            <span class="label label-default"><%= photo.exif_value :f_number %></span>
+            <%- if photo.exif.exposure_program > 1 && photo.exif.exposure_program < 5 -%>
+              <span class="label label-default"><%= ['M', 'P', 'A', 'S'][photo.exif.exposure_program-1] %></span>
+            <%- end -%>
+            <span class="label label-default"><%= photo.exif.exposure_time %> &quot;</span>
+            <span class="label label-default">F <%= photo.exif.f_number.to_f %></span>
             <span class="label label-default"><%= photo.exif_value :iso_speed_ratings %></span>
             <%- if photo.exif.exposure_bias_value != 0 -%>
               <span class="label label-default"><%= photo.exif_value :exposure_bias_value %></span>
