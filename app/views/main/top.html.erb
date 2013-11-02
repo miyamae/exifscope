@@ -9,12 +9,12 @@
 </div>
 <div class="top-bg2">
 </div>
-<div class="top-content">
+<div class="top-content well">
   <p>ブックマークレットを使えば、閲覧中の写真のExif情報を簡単に確認できます。</p>
-  <p><a href="javascript:window.open('<%= root_url %>?url='+encodeURIComponent(location.href));">
+  <div><a href="javascript:window.open('<%= root_url %>?url='+encodeURIComponent(location.href)).focus()">
   <span class="label label-default">Bookmarklet</span><br>
-  <code style="font-size:12px">javascript:window.open('<%= root_url %>?url='+encodeURIComponent(location.href));</code></a></p>
+  <span style="font-size:12px">javascript:window.open('<%= root_url %>?url='+encodeURIComponent(location.href)).focus()</span></a></div>
 </div>
-<p class="text-right" style="margin-top:50px;">
+<p class="text-right" style="">
   <a href="https://github.com/miyamae/exifscope">Fork me on GitHub</a>
 </p>
