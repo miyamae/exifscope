@@ -12,6 +12,9 @@ class MainController < ApplicationController
 
   def content
     if params[:url] =~ /^https?:\/\//
+      if params[:url] =~ /^#{Regexp.escape(root_url)}/
+        raise
+      end
       @photos = Page.new(params[:url]).photos
     end
     render layout: nil
