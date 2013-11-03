@@ -3,17 +3,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 250px;
   z-index: -2;
-}
-
-.top-bg2 {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: #fff;
+  background-image: url(top_bg.jpg);
+  background-size: cover;
 }
 
 .top-hero {

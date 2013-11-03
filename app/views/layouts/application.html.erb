@@ -45,7 +45,11 @@
     <div id="footer">
       <div class="footer">
         <div class="container">
-          <p class="muted credit">Powered by Tatsuya Miyamae @ <a href="http://bitarts.jp/">BitArts, Inc.</a></p>
+          <p class="muted credit">
+            &copy; 2013<%= "-#{Time.now.year}" if Time.now.year > 2013 %>
+            Tatsuya Miyamae / <a href="http://bitarts.jp/">BitArts, Inc.</a>
+          </p>
+        </div>
         </div>
       </div>
     </div>
