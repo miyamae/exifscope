@@ -33,6 +33,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'xmp'
 gem 'exifr'
 gem 'mini_magick'
 gem 'settingslogic'

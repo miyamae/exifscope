@@ -19,24 +19,41 @@
     <p><a href="<%= photo.url %>" target="_blank" title="<%= photo.url %>">
       <%= image_tag url_for(action: :image, url: photo.url),
         class: 'img-responsive', alt: photo.url, title: photo.url %></a></p>
-    <%- if photo.exif_value(:date_time_original) -%>
+    <%- if photo.meta_value :date_time_original -%>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <%= photo.exif_value :date_time_original %>
+          <div><%= photo.meta_value :model %></div>
+          <%- if photo.meta_value :aux_lens -%>
+            <div><%= photo.meta_value :aux_lens %></div>
+          <%- end -%>
         </div>
         <div class="panel-body">
           <div>
-            <%= photo.exif_value :model %>
+            <%= photo.meta_value :date_time_original %>
           </div>
           <div>
-            <%- if photo.exif.exposure_program > 1 && photo.exif.exposure_program < 5 -%>
-              <span class="label label-default"><%= ['M', 'P', 'A', 'S'][photo.exif.exposure_program-1] %></span>
+            <%- if photo.meta[:exposure_program] > 1 && photo.meta[:exposure_program] < 5 -%>
+              <span class="label label-default"><%= ['M', 'P', 'A', 'S'][photo.meta[:exposure_program]-1] %></span>
             <%- end -%>
-            <span class="label label-default"><%= photo.exif.exposure_time %> &quot;</span>
-            <span class="label label-default">F <%= photo.exif.f_number.to_f %></span>
-            <span class="label label-default"><%= photo.exif_value :iso_speed_ratings %></span>
-            <%- if photo.exif.exposure_bias_value != 0 -%>
-              <span class="label label-default"><%= photo.exif_value :exposure_bias_value %></span>
+            <span class="label label-default"><%= photo.meta_value :exposure_time %></span>
+            <span class="label label-default"><%= photo.meta_value :f_number %></span>
+            <span class="label label-default"><%= photo.meta_value :iso_speed_ratings %></span>
+            <%- if photo.meta[:exposure_bias_value] != 0 -%>
+              <span class="label label-default"><%= photo.meta_value :exposure_bias_value %></span>
+            <%- end -%>
+            <span class="label label-default"><%= photo.meta_value :focal_length %></span>
+          </div>
+          <div class="pull-right">
+            <%= number_with_delimiter photo.meta[:width] %> × <%= number_with_delimiter photo.meta[:height] %>
+            (<%= number_to_human_size photo.binary.size %>)
+          </div>
+          <div>
+            <%- if photo.meta[:white_balance] == 0 -%>
+              <span class="label label-default">AWB</span>
+            <%- end -%>
+            <%- if [2,3,5].include? photo.meta[:metering_mode] -%>
+              <%= image_tag "metering_#{photo.meta[:metering_mode]}.jpg",
+                height: 20, alt: photo.meta_value(:metering_mode) %>
             <%- end -%>
           </div>
         </div>
@@ -48,7 +65,7 @@
     <%- end -%>
     <div class="table-responsive">
       <table class="table table-bordered">
-        <%- photo.pretty_exif.each do |k, v| -%>
+        <%- photo.pretty_meta.each do |k, v| -%>
           <tr>
             <th class="col-xs-4"><%= v[0] %></th>
             <td><%= v[1] %></td>

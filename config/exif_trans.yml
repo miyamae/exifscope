@@ -22,7 +22,7 @@ fields:
   transfer_function: 再生階調カーブ特性
   creator_tool: 使用ソフトウェア名
   modify_date: ファイル変更日時
-  artist: 作者名
+  artist: 作成者
   white_point: 参照白色点の色度座標値
   primary_chromaticities: 原色の色度座標値
   jpeg_interchange_format: JPEGのSOIへのオフセット
@@ -31,7 +31,7 @@ fields:
   ycb_cr_sub_sampling: YCCの画素構成(Cの間引き率)
   ycb_cr_positioning: YCCの画素構成(YとCの位置)
   reference_black_white: 参照黒色点値と参照白色点値
-  copyright: 撮影著作権者/編集著作権者
+  copyright: 著作権者
   exposure_time: 露出時間
   f_number: F値
   exif_ifd_pointer: Exifタグ
@@ -467,6 +467,28 @@ fields:
   fj_focus_warning: オートフォーカスの状態
   fjae_warning: 自動露出の状態
   kc_mode: 撮影モード
+  xmpMM_document_id: ドキュメントID
+  xmpMM_instance_id: インスタンスID
+  xmpMM_original_document_id: オリジナルドキュメントID
+  xmpMM_history: 履歴
+  photoshop_date_created: Photoshop作成日時
+  photoshop_color_mode: Photoshopカラーモード
+  photoshop_icc_profile: PhotoshopICCプロフィール
+  aux_serial_number: シリアル番号
+  aux_lens_info: レンズ情報
+  aux_lens: レンズモデル
+  aux_lens_id: レンズID
+  aux_lens_serial_number: レンズシリアル番号
+  aux_flash_compensation: フラッシュ補正
+  aux_firmware: ファームウェア
+  xmp_creator_tool: 作成ツール
+  xmp_modify_date: 更新日時
+  xmp_create_date: 作成日時
+  xmp_metadata_date: メタ情報日時
+  dc_format: フォーマット
+  dc_description: 説明
+  dc_creator: 作成者
+  dc_rights: 著作権者
 
 values:
   exposure_program:
