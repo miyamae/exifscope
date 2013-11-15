@@ -40,13 +40,13 @@
             <%- end -%>
           </div>
           <div>
-            <%- if photo.meta[:exposure_program] > 1 && photo.meta[:exposure_program] < 5 -%>
+            <%- if photo.meta[:exposure_program] && photo.meta[:exposure_program] > 1 && photo.meta[:exposure_program] < 5 -%>
               <span class="label label-default"><%= ['M', 'P', 'A', 'S'][photo.meta[:exposure_program]-1] %></span>
             <%- end -%>
             <span class="label label-default"><%= photo.meta_value :exposure_time %></span>
             <span class="label label-default"><%= photo.meta_value :f_number %></span>
             <span class="label label-default"><%= photo.meta_value :iso_speed_ratings %></span>
-            <%- if photo.meta[:exposure_bias_value] != 0 -%>
+            <%- if photo.meta[:exposure_bias_value] && photo.meta[:exposure_bias_value] != 0 -%>
               <span class="label label-default"><%= photo.meta_value :exposure_bias_value %></span>
             <%- end -%>
             <span class="label label-default"><%= photo.meta_value :focal_length %></span>
