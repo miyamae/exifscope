@@ -38,7 +38,7 @@ class Page
     urls = []
     tmp = content.gsub(/<a .*?href=\"(.*?)\".*?>.*?<\/a>/im) {|m|
       url = $1
-      if url =~ /\.(jpg|jpeg)/i
+      if url =~ /\.(jpg|jpeg)(\?.*|)/i
         urls << url.gsub(' ', '%20')
         nil
       else
@@ -47,11 +47,13 @@ class Page
     }
     tmp.gsub(/<img .*?src=\"(.*?)\".*?>/im) {
       url = $1
-      if url =~ /\.(jpg|jpeg)/i
+      if url =~ /\.(jpg|jpeg)(\?.*|)/i
         urls << url.gsub(' ', '%20')
       end
     }
-    urls.uniq
+    urls.uniq.map do |url|
+      (URI.parse(@url) + url).to_s
+    end
   end
 
 end
